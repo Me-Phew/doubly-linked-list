@@ -13,5 +13,13 @@
         "CMAKE_BUILD_TYPE": "Debug"
       }
     }
+  ],
+  "buildPresets": [
+    {
+      "name": "default",
+      "hidden": false,
+      "configurePreset": "GCC 13.1.0 x86_64-w64-mingw32 (mingw64)",
+      "jobs": 4
+    }
   ]
 }
