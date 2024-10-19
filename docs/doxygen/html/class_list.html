@@ -21,6 +21,7 @@
 <script type="text/javascript" src="search/search.js"></script>
   <link href="doxygen.css" rel="stylesheet" type="text/css" />
   <link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="theme.css" rel="stylesheet" type="text/css"/>
   <!-- Awesome theme toggle -->
   <script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
   <script type="text/javascript">
@@ -123,12 +124,20 @@ $(function(){initNavTree('class_list.html',''); initResizable(true); });
 </div><!--header-->
 <div class="contents">
 
-<p>Doxygen test.  
+<p>Example of a table using Markdown in Doxygen.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="main_8h_source.html">main.h</a>&gt;</code></p>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Doxygen test. </p>
+<div class="textblock"><p>Example of a table using Markdown in Doxygen. </p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Syntax   </th><th class="markdownTableHeadNone">Description    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">Header   </td><td class="markdownTableBodyNone">Title    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">Paragraph   </td><td class="markdownTableBodyNone">Text   </td></tr>
+</table>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>src/<a class="el" href="main_8h_source.html">main.h</a></li>
 </ul>
