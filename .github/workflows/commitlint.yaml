@@ -5,7 +5,7 @@ on: [push, pull_request]
 jobs:
   commitlint:
     name: Lint commit messages
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
       - name: Get latest code
         uses: actions/checkout@v4
