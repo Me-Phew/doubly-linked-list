@@ -1,11 +1,11 @@
 pre-commit:
   commands:
     build:
-      run: cmake --build --preset default
+      run: npm run build
 
     generate-docs:
       root: /
-      run: doxygen && ./docs/latex/make.bat
+      run: doxygen && ./docs/doxygen/latex/make.bat
 
 commit-msg:
   commands:
