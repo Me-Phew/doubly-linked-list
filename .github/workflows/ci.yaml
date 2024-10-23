@@ -22,7 +22,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-      
+
       - name: Install Node dependencies
         run: npm install
 
@@ -46,7 +46,6 @@ jobs:
 
       - name: Prepare build artifacts
         run: |
-            tree
             cp ./build/linux-release/DoublyLinkedList ./DoublyLinkedList-${{ steps.tag_version.outputs.new_tag }}-linux-x64
             cp ./build/windows-release/DoublyLinkedList.exe ./DoublyLinkedList-${{ steps.tag_version.outputs.new_tag }}-win-x64.exe
 
@@ -55,8 +54,6 @@ jobs:
 
       - name: Generate Doxygen Documentation
         uses: mattnotmitt/doxygen-action@edge
-        with:
-          enable-latex: true
 
       - name: Deploy Doxygen documentation website
         uses: peaceiris/actions-gh-pages@v4
@@ -64,13 +61,24 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs/doxygen/html
 
+      - name: Compile Doxygen LaTeX documentation
+        uses: xu-cheng/latex-action@3.2.0
+        with:
+          extra_system_packages: "inkscape"
+          latexmk_shell_escape: true
+          working_directory: ./docs/doxygen/latex
+          root_file: refman.tex
+
       - name: Prepare Doxygen PDF file
         run: cp ./docs/doxygen/latex/refman.pdf ./Dokumentacja-Doxygen.pdf
 
       - name: Compile LaTeX documentation
-        uses: xu-cheng/latex-action@v3
+        uses: xu-cheng/latex-action@3.2.0
         with:
-          root_file: ./docs/dokument.tex
+          extra_system_packages: "inkscape"
+          latexmk_shell_escape: true
+          working_directory: ./docs
+          root_file: dokument.tex
 
       - name: Prepare LaTeX PDF file
         run: cp ./docs/dokument.pdf ./Dokumentacja.pdf
