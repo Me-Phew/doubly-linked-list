@@ -46,6 +46,7 @@ jobs:
 
       - name: Prepare build artifacts
         run: |
+            tree
             cp ./build/linux-release/DoublyLinkedList ./DoublyLinkedList-${{ steps.tag_version.outputs.new_tag }}-linux-x64
             cp ./build/windows-release/DoublyLinkedList.exe ./DoublyLinkedList-${{ steps.tag_version.outputs.new_tag }}-win-x64.exe
 
