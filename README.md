@@ -1,1 +1,3 @@
-# Algorytm listy dwukierunkowej
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/Me-Phew/doubly-linked-list/ci.yaml?logo=bilibili&style=for-the-badge) ![GitHub deployments](https://img.shields.io/github/deployments/Me-Phew/doubly-linked-list/github-pages?label=Doxygen%20Documentaion&logo=bilibili&style=for-the-badge) ![GitHub last commit](https://img.shields.io/github/last-commit/Me-Phew/doubly-linked-list?color=8bd5ca&logo=starship&style=for-the-badge) ![GitHub repo size](https://img.shields.io/github/repo-size/Me-Phew/doubly-linked-list?logo=github&style=for-the-badge)
+
+# Implementacja listy dwukierunkowej w C++
