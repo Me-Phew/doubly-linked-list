@@ -1,10 +1,7 @@
 pre-commit:
-  parallel: false
   commands:
-    configure-cmake:
-      run: cmake --preset "GCC 13.1.0 x86_64-w64-mingw32 (mingw64)"
     build:
-      run: cmake --build --preset "GCC 13.1.0 x86_64-w64-mingw32 (mingw64)"
+      run: npm run build
 
     generate-docs:
       root: /
