@@ -35,9 +35,13 @@ jobs:
       - name: Install CMake and ninja
         uses: lukka/get-cmake@latest
 
-      - name: Compile project using CMake
-        run: cmake --build --preset linux-release-build \
+      - name: Compile project for Windows using CMake
+        run: cmake --preset windows-release-build \
              cmake --build --preset windows-release-build
+
+      - name: Compile project for Linux using CMake
+        run: cmake --preset linux-release-build \
+             cmake --build --preset linux-release-build
 
       - name: Prepare build artifacts
         run: cp ./build/linux-release/DoublyLinkedList ./DoublyLinkedList-${{ steps.tag_version.outputs.new_tag }}-linux-x64 \
