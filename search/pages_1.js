@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['dwukierunkowej_0',['Algorytm listy dwukierunkowej',['../md_README.html',1,'']]]
+  ['dwukierunkowej_0',['Algorytm listy dwukierunkowej',['../md__r_e_a_d_m_e.html',1,'']]]
 ];

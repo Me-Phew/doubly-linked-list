@@ -1,4 +1,5 @@
 var annotated_dup =
 [
-    [ "List", "classList.html", null ]
+    [ "App", "classApp.html", null ],
+    [ "DoublyLinkedList", "classDoublyLinkedList.html", "classDoublyLinkedList" ]
 ];

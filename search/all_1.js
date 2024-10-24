@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['dwukierunkowej_0',['Algorytm listy dwukierunkowej',['../md_README.html',1,'']]]
+  ['c_0',['Implementacja listy dwukierunkowej w C++',['../md_README.html#autotoc_md0',1,'']]]
 ];

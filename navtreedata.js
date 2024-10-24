@@ -25,10 +25,17 @@
 var NAVTREE =
 [
   [ "Doubly Linked List", "index.html", [
-    [ "Algorytm listy dwukierunkowej", "md_README.html", null ],
+    [ "README", "md_README.html", [
+      [ "Implementacja listy dwukierunkowej w C++", "md_README.html#autotoc_md0", null ]
+    ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
-      [ "Class Index", "classes.html", null ]
+      [ "Class Index", "classes.html", null ],
+      [ "Class Members", "functions.html", [
+        [ "All", "functions.html", null ],
+        [ "Functions", "functions_func.html", null ],
+        [ "Related Symbols", "functions_rela.html", null ]
+      ] ]
     ] ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ]
