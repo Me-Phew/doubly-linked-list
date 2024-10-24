@@ -1,4 +1,4 @@
-#include <Windows.h>
+#include <windows.h>
 
 #include "../doubly_linked_list/doubly_linked_list.hpp"
 #include "app.hpp"
