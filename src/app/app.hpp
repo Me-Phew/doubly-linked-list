@@ -35,6 +35,10 @@ std::istream& operator>>(std::istream& iStream, MenuOption& menuOption);
 class App {
   static DoublyLinkedList doublyLinkedList; ///< Obiekt listy dwukierunkowej.
 
+  App() = delete;
+  App(const App&) = delete;
+  App& operator=(const App&) = delete;
+
   /// @brief Wyświetla główne menu aplikacji i zwraca wybraną opcję.
   /// @return Wybrana opcja menu.
   static int mainMenu();
