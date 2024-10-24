@@ -1,0 +1,52 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{ProGit}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=481e648044a8482474c2ea78afa74dc0}{%
+           family={Ben\bibnamedelima Straub},
+           familyi={B\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Scott\bibnamedelima Chacon},
+           giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Apress}%
+      }
+      \strng{namehash}{481e648044a8482474c2ea78afa74dc0}
+      \strng{fullhash}{481e648044a8482474c2ea78afa74dc0}
+      \strng{fullhashraw}{481e648044a8482474c2ea78afa74dc0}
+      \strng{bibnamehash}{481e648044a8482474c2ea78afa74dc0}
+      \strng{authorbibnamehash}{481e648044a8482474c2ea78afa74dc0}
+      \strng{authornamehash}{481e648044a8482474c2ea78afa74dc0}
+      \strng{authorfullhash}{481e648044a8482474c2ea78afa74dc0}
+      \strng{authorfullhashraw}{481e648044a8482474c2ea78afa74dc0}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2}
+      \field{title}{Pro Git}
+      \field{year}{2009}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
