@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_7edoublylinkedlist_0',['~DoublyLinkedList',['../classDoublyLinkedList.html#abe3231c8ee3dd956b5261c4148102967',1,'DoublyLinkedList']]]
+  ['w_20c_0',['Implementacja listy dwukierunkowej w C++',['../md_README.html#autotoc_md0',1,'']]]
 ];

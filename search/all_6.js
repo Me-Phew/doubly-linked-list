@@ -1,9 +1,5 @@
 var searchData=
 [
-  ['readme_0',['README',['../md_README.html',1,'']]],
-  ['removeallitems_1',['removeAllItems',['../classDoublyLinkedList.html#a1b99f35bb8e829b74951b708c5d870a2',1,'DoublyLinkedList']]],
-  ['removefirstitem_2',['removeFirstItem',['../classDoublyLinkedList.html#ac6220490442a3dd89754592cc9eec40f',1,'DoublyLinkedList']]],
-  ['removeitemfromindex_3',['removeItemFromIndex',['../classDoublyLinkedList.html#a6a2812d4b8bde31f12eabc33ce2a1c7b',1,'DoublyLinkedList']]],
-  ['removelastitem_4',['removeLastItem',['../classDoublyLinkedList.html#ab7717b9ad1a5552cac6d8bbbc7f83e29',1,'DoublyLinkedList']]],
-  ['run_5',['run',['../classApp.html#a8d27eeb51b813760dc39425d7a9a37e2',1,'App']]]
+  ['operator_3c_3c_0',['operator&lt;&lt;',['../classDoublyLinkedList.html#aa6d4e95f846f0df5837fa18859fb19b0',1,'DoublyLinkedList::operator&lt;&lt;'],['../classDoublyLinkedList.html#a9cd88cc2e59c045ea0fc1020a0691f71',1,'DoublyLinkedList::operator&lt;&lt;']]],
+  ['operator_5b_5d_1',['operator[]',['../classDoublyLinkedList.html#a7ed2e238c2ae992563f99ec5fbc48cc5',1,'DoublyLinkedList']]]
 ];
