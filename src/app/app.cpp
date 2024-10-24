@@ -1,4 +1,6 @@
-#include <Windows.h>
+#ifdef _WIN32
+#include <windows.h>
+#endif
 
 #include "../doubly_linked_list/doubly_linked_list.hpp"
 #include "app.hpp"
@@ -97,8 +99,10 @@ int App::mainMenu() {
 
 
 int App::run() {
+#ifdef _WIN32
   // enable utf-8 printing on windows
   SetConsoleOutputCP(CP_UTF8);
+#endif
 
   DoublyLinkedList doublyLinkedList;
 
