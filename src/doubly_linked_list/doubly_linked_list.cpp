@@ -43,15 +43,14 @@ void DoublyLinkedList::insertItemAtEnd(int value) {
 
 void DoublyLinkedList::insertItemAtIndex(int index, int value) {
   if (index < 0) {
-    std::cout << "Indeks nie może być ujemny\n";
-    exit(0);
+    throw std::out_of_range("The index cannot be less than 0");
   } else if (index == 0) {
     insertItemAtFront(value);
   } else if (index == nodeCount) {
     insertItemAtEnd(value);
   } else {
     if (index > nodeCount) {
-      std::cout << "Nie można wstawić wartości pod indeksem: " << index << '\n';
+      throw std::out_of_range("Cannot insert value under index: " + index);
       return;
     }
 
@@ -74,8 +73,7 @@ void DoublyLinkedList::insertItemAtIndex(int index, int value) {
 
 void DoublyLinkedList::removeFirstItem() {
   if (head == nullptr) {
-    std::cout << "Nie można usunąć pierwszego elementu z pustej listy!\n";
-    exit(0);
+    throw std::out_of_range("Cannot remove first item from an empty list");
   }
 
   if (nodeCount > 1) {
@@ -97,8 +95,7 @@ void DoublyLinkedList::removeFirstItem() {
 
 void DoublyLinkedList::removeLastItem() {
   if (tail == nullptr) {
-    std::cout << "Nie można usunąć ostatniego elementu z pustej listy!\n";
-    exit(0);
+    throw std::out_of_range("Cannot remove last element from an empty list");
   }
 
   if (nodeCount > 2) {
@@ -122,13 +119,11 @@ void DoublyLinkedList::removeLastItem() {
 
 void DoublyLinkedList::removeItemFromIndex(int index) {
   if (index < 0) {
-    std::cout << "Indeks nie może być ujemny\n";
-    return;
+    throw std::out_of_range("Index cannot be less than 0");
   }
 
   if (index > nodeCount - 1) {
-    std::cout << "Indeks poza zakresem\n";
-    return;
+    throw std::out_of_range("Index out of list size");
   }
 
   if (index == 0) {
@@ -182,35 +177,31 @@ void DoublyLinkedList::displayAllItemsReversed() const {
 
 void DoublyLinkedList::displayNextItemFromIndex(int index) const {
   if (index < -1) {
-    std::cout << "Indeks nie może być mniejszy niż -1\n";
-    return;
+    throw std::out_of_range("Index cannot be less than -1");
   }
 
   if (index > nodeCount - 1) {
-    std::cout << "Indeks poza zakresem\n";
-    return;
+    throw std::out_of_range("Index out of list size");
   }
 
   if (nodeCount - 2 >= index) {
     std::cout << (*this)[index + 1] << std::endl;
   } else if (nodeCount - 1 == index) {
-    std::cout << "Brak następnego elementu\n";
+    throw std::out_of_range("Next element missing");
   }
 }
 
 void DoublyLinkedList::displayPreviousItemFromIndex(int index) const {
   if (index < 0) {
-    std::cout << "Indeks nie może być ujemny\n";
-    return;
+    throw std::out_of_range("Index cannot be less than 0");
   }
 
   if (index > nodeCount) {
-    std::cout << "Indeks poza zakresem\n";
-    return;
+    throw std::out_of_range("Index out of list size");
   }
 
   if (index < 1) {
-    std::cout << "Brak poprzedniego elementu\n";
+    throw std::out_of_range("Previous item missing");
   } else {
     std::cout << (*this)[index - 1] << '\n';
   }
@@ -218,13 +209,11 @@ void DoublyLinkedList::displayPreviousItemFromIndex(int index) const {
 
 const int& DoublyLinkedList::operator[](int index) const {
   if (index < 0) {
-    std::cout << "Indeks nie może być ujemny\n";
-    exit(0);
+    throw std::out_of_range("Index cannot be less than 0");
   }
 
   if (index > nodeCount - 1) {
-    std::cout << "Indeks poza zakresem\n";
-    exit(0);
+    throw std::out_of_range("Index out of list size");
   }
 
   Node* current = head;
